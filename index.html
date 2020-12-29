@@ -63,6 +63,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
 
   <body>
@@ -71,6 +72,7 @@
         ><img src="assets/images/resources/preloader.png" alt="Awesome Image"
       /></span>
     </div>
+
     <!-- /.preloader -->
     <div class="page-wrapper">
       <div class="site-header__header-one-wrapper">
@@ -87,7 +89,9 @@
               <a class="header-phone" href="tel:1-258-985-703"
                 ><i class="fas fa-phone-alt"></i>Helpline: 1-258-985-703</a
               >
-              <a href="#"><i class="fas fa-map-marker-alt"></i>address</a>
+              <a href="http://goo.gl/maps/peyYUhkEPwMyvfFZ8"
+                ><i class="fas fa-map-marker-alt"></i>address</a
+              >
               <div class="topbar-one__social">
                 <a href="#" class="fab fa-twitter"></a>
                 <a href="#" class="fab fa-google-plus-g"></a>
@@ -156,6 +160,81 @@
         </header>
         <!-- /.site-header -->
       </div>
+      <div
+        class="modal fade bs-example-modal-lg"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myLargeModalLabel"
+        aria-hidden="true"
+        id="onload"
+      >
+        <style>
+          .modal-lg {
+            max-width: 80% !important;
+          }
+        </style>
+        <div class="modal-dialog modal-lg">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">
+                <i class="fa fa-exclamation-circle"></i>&nbsp DISCLAIMER &
+                CONFIRMATION
+              </h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                As per the rules of the Bar Council of India, we are not
+                permitted to solicit work and advertise. The user acknowledges
+                the following: <br />
+                There has been no advertisement, personal communication,
+                solicitation, invitation or inducement of any sort whatsoever
+                from us or any of our members to solicit any work through this
+                website; The user wishes to gain more information about us for
+                his/her own information and use; The information about us is
+                provided to the user only on his/her specific request and any
+                information obtained or materials downloaded from this website
+                is completely at the user’s volition and any transmission,
+                receipt or use of this site would not create any lawyer-client
+                relationship. <br />
+                The information provided under this website is solely available
+                at your request for information purpose only and should not be
+                interpreted as soliciting or advertisement. <br />
+                We are not liable for any consequence of any action taken by the
+                user relying on material/information provided under this
+                website. In cases where the user has any legal issues, he/she in
+                all cases must seek independent legal advice, as the material
+                contained in this document does not constitute/substitute
+                professional advice that may be required before acting on any
+                matter. Neither this website nor the web pages and the
+                information contained herein constitute a contract, or will form
+                the basis of a contract. While, every care has been taken in
+                preparing the content of this website and web pages to ensure
+                accuracy at the time of publication and creation, however, Vaish
+                Associates assumes no responsibility for any errors, which
+                despite all precautions may be found herein. All disputes, if
+                any, are subject to the exclusive jurisdiction of Indian courts
+                only.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                I Accept
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        $(window).load(function () {
+          $('#onload').modal('show');
+        });
+      </script>
+
       <!-- /.site-header__header-one-wrapper -->
       <section class="slider-one">
         <div class="slider-one__carousel owl-carousel owl-theme">
@@ -232,7 +311,7 @@
                 <!-- /.about-one__text -->
                 <img
                   class="about-one__signature"
-                  src="assets/images/resources/signature-1-1.png"
+                  src="assets/images/signature.jpg"
                   alt="Awesome Image"
                 />
                 <p class="about-one__author">Founder & senior lawyer</p>
